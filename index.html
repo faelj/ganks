@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PvPs da Guilda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <header class="masthead">
+      <p class="eyebrow">registro de batalhas &middot; guilda</p>
+      <h1 class="title">PVPs DA GUILDA</h1>
+      <ul class="roster">
+        <li><span class="dot mega"></span>Mega</li>
+        <li><span class="dot gui"></span>Gui</li>
+        <li><span class="dot pedro"></span>Pedrinho</li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="block" aria-labelledby="h-confrontos">
+        <h2 class="block-title" id="h-confrontos">Confrontos</h2>
+        <div class="cards" id="matchups-container"></div>
+      </section>
+
+      <section class="block" aria-labelledby="h-geral">
+        <h2 class="block-title" id="h-geral">Geral</h2>
+        <div class="standings" id="standings-container"></div>
+      </section>
+
+      <section class="block block-choro" aria-labelledby="h-choro">
+        <h2 class="block-title" id="h-choro">Choro <span class="block-sub">(extra, por diversão)</span></h2>
+        <div class="choro-row" id="choro-container"></div>
+      </section>
+    </main>
+
+    <footer class="actions">
+      <button class="btn" id="btn-export" type="button">Exportar backup</button>
+      <label class="btn" for="import-file">Importar backup</label>
+      <input type="file" id="import-file" accept="application/json" hidden>
+      <button class="btn btn-danger" id="btn-reset" type="button">Resetar tudo</button>
+    </footer>
+
+    <p class="footnote">Os dados ficam salvos neste navegador (localStorage), no aparelho onde o site foi aberto. Use "Exportar backup" pra guardar um arquivo .json e "Importar backup" pra trazer os dados de volta em outro navegador ou dispositivo.</p>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
