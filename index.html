@@ -21,6 +21,7 @@
         <li><span class="dot gui"></span>Gui</li>
         <li><span class="dot pedro"></span>Pedrinho</li>
       </ul>
+      <p class="sync-status" id="sync-status">Conectando…</p>
     </header>
 
     <main>
@@ -47,9 +48,9 @@
       <button class="btn btn-danger" id="btn-reset" type="button">Resetar tudo</button>
     </footer>
 
-    <p class="footnote">Os dados ficam salvos neste navegador (localStorage), no aparelho onde o site foi aberto. Use "Exportar backup" pra guardar um arquivo .json e "Importar backup" pra trazer os dados de volta em outro navegador ou dispositivo.</p>
+    <p class="footnote">Os dados ficam salvos na nuvem (Firebase) e são sincronizados em tempo real — qualquer pessoa que abrir este site (com a mesma configuração) vê e edita os mesmos placares. Use "Exportar backup" de vez em quando pra guardar uma cópia local em .json.</p>
   </div>
 
-<script src="script.js"></script>
+<script type="module" src="script.js"></script>
 </body>
 </html>

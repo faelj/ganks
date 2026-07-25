@@ -107,6 +107,16 @@ body {
 .dot.gui { background: var(--gui); }
 .dot.pedro { background: var(--pedro); }
 
+.sync-status {
+  margin: 14px 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-dim);
+}
+.sync-status.ok { color: var(--win); }
+.sync-status.error { color: var(--loss); }
+
 /* ---------- section blocks ---------- */
 .block { margin-bottom: 44px; }
 
